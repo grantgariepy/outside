@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#first{
+  background-image: url("/images/out1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* margin-bottom: -px; */
+
+}
+#second{
+  background-image: url("/images/out2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: difference;
+  margin-top: -60px;
+}
+#third{
+  background-image: url("/images/white-building.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#blend{
+  mix-blend-mode:soft-light;
+}
