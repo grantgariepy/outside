@@ -1,5 +1,6 @@
 <div>
 	<div class="bg-fixed w-screen h-screen" id="first">
+		<h1 class="text-6xl w-screen text-center font-bold">OUTSIDE</h1>
 		<!-- <div class="absolute inset-x-0 bottom-3 h-24" /> -->
 	</div>
 	<div class="bg-fixed w-screen h-screen mix-blend-lighten" id="second">

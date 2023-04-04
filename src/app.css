@@ -7,7 +7,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* margin-bottom: -px; */
+  margin-bottom: -6rem;
+  padding-bottom: 2rem;
 
 }
 #second{
@@ -15,7 +16,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: difference;
-  margin-top: -60px;
+  /* margin-top: ; */
 }
 #third{
   background-image: url("/images/white-building.jpg");
