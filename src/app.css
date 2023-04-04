@@ -2,28 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-#first{
-  background-image: url("/images/out1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: -6rem;
-  padding-bottom: 2rem;
-
-}
-#second{
-  background-image: url("/images/out2.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: difference;
-  /* margin-top: ; */
-}
-#third{
-  background-image: url("/images/white-building.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+@font-face {
+  font-family: 'early-edition';
+  src: url('/font/EarlyEditionJNL.woff2')
+    format('woff2');
 }
 
-#blend{
-  mix-blend-mode:soft-light;
+.logo{
+  font-family: early-edition;
+  /* text-shadow: 6px 6px  white; */
 }
