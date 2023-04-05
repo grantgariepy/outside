@@ -3,12 +3,23 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: 'Knockout HTF92-UltmtCruiserwt Regular';
+  src: url('/font/Knockout-HTF92-UltmtCruiserwt-Regular.woff2')
+    format('woff2');
+}
+@font-face {
   font-family: 'early-edition';
   src: url('/font/EarlyEditionJNL.woff2')
     format('woff2');
 }
 
-.logo{
+.early-edition{
   font-family: early-edition;
   /* text-shadow: 6px 6px  white; */
 }
+.knockout{
+  font-family: Knockout HTF92-UltmtCruiserwt Regular;
+  /* text-shadow: 6px 6px  white; */
+}
+
+/* ff7373 */
