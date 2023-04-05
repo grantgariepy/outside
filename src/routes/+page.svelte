@@ -19,12 +19,20 @@
 		id="third"
 		style="background-image:url('images/out3.webp')"
 	>
-		<div class="">
-			<div class="">
-				<p class="knockout text-white text-9xl tracking-widest font-bold pl-5">IDEAS 5</p>
+		<div class="h-screen flex flex-col justify-center">
+			<div class="flex  justify-start">
+				<p
+					class="knockout text-white text-4xl md:text-9xl lg:text-[11rem] tracking-wider font-bold md:pl-12 pl-5 md:pb-12 pb-14 "
+				>
+					IDEAS 5
+				</p>
 			</div>
-			<div class="">
-				<p class="text-white">hi</p>
+			<div class="flex md:justify-end justify-center">
+				<p
+					class="early-edition tracking-wider lg:text-7xl md:text-4xl text-xl text-black bg-white w-11/12 md:w-1/2 md:mr-20 justify-end flex md:pr-10 md:pb-8 md:pt-4 px-3 pb-4 pt-3"
+				>
+					Grant Gariepy for Halcyon
+				</p>
 			</div>
 			<!-- <p class="text-white">hi</p> -->
 		</div>
@@ -37,6 +45,6 @@
 
 <style>
 	#third {
-		height: 105vh;
+		height: 110vh;
 	}
 </style>
