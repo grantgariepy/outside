@@ -22,4 +22,8 @@
   /* text-shadow: 6px 6px  white; */
 }
 
+body{
+  scroll-behavior: smooth;
+}
+
 /* ff7373 */
