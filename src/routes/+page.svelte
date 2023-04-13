@@ -1,4 +1,4 @@
-<div>
+<div class="desktop">
 	<!-- first -->
 	<div
 		class="out1 bg-fixed w-screen h-screen z-10 bg-cover bg-center bg-no-repeat -mb-12"
@@ -81,26 +81,41 @@
 			</div>
 		</div>
 	</div>
+	<!-- sixth -->
+	<div
+		class="bg-fixed w-screen h-[130vh] mix-blend-screen bg-center bg-cover bg-no-repeat"
+		id="third"
+		style="background-image:url('images/out6.webp')"
+	/>
 </div>
-<!-- sixth -->
-<div
-	class="bg-fixed w-screen h-[130vh] mix-blend-screen bg-center bg-cover bg-no-repeat"
-	id="third"
-	style="background-image:url('images/out6.webp')"
-/>
 
 <style>
-	.out1 {
-		background-size: cover;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-	}
+	/* @media only screen and (max-width: 600px) {
+		.desktop {
+			display: none;
+		}
+	} */
 	.out4 {
 		background-position: 0 10%;
 		background-size: 50vw;
 	}
 	.out4-form {
 		clip-path: polygon(5% 0, 100% 0, 100% 98%, 96% 100%, 0 100%, 0 2%);
+	}
+	/* Fixed background for tablet and mobile */
+	@media all and (max-width: 1024px) {
+		.out1:after {
+			content: '';
+			width: 100%;
+			height: 100%;
+			background-position: inherit;
+			background-image: inherit;
+			background-size: inherit;
+			background-attachment: inherit;
+			background-repeat: inherit;
+			position: fixed;
+			top: 0;
+			z-index: -1;
+		}
 	}
 </style>
