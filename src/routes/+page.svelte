@@ -1,10 +1,16 @@
 <div class="desktop">
 	<!-- first -->
-	<div
-		class="out1 bg-fixed w-screen h-screen z-10 bg-cover bg-center bg-no-repeat -mb-12"
-		style="background-image:url('images/out1.jpg')"
-	>
-		<h1 class="tracking-widest early-edition text-8xl w-screen text-center antialiased">HALCYON</h1>
+	<div class="out1-with-fixed-bg">
+		<div class="out1-bg-wrap">
+			<div
+				class="out1 bg-fixed w-screen h-screen z-10 bg-cover bg-center bg-no-repeat -mb-12"
+				style="background-image:url('images/out1.jpg')"
+			>
+				<h1 class="tracking-widest early-edition text-8xl w-screen text-center antialiased">
+					HALCYON
+				</h1>
+			</div>
+		</div>
 	</div>
 	<!-- second -->
 	<div
@@ -90,22 +96,34 @@
 </div>
 
 <style>
-	@supports (-webkit-touch-callout: none) {
-		.out1 {
-			background: url('out1.jpg') center top no-repeat scroll;
-			background-size: auto 100vh;
-			background-attachment: scroll;
-		}
-		.out2 {
-			background: url('out2.jpg') center top no-repeat scroll;
-			background-size: auto 100vh;
-			background-attachment: scroll;
-		}
-	}
 	@media only screen and (max-width: 600px) {
+		.out1-with-fixed-bg {
+			width: 100%;
+			height: 100vh;
+
+			/* Important */
+			position: relative;
+		}
+		.out1-bg-wrap {
+			clip: rect(0, auto, auto, 0);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
 		.out1 {
-			background-size: auto 100vh;
-			background-position: top center;
+			position: fixed;
+			display: block;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center center;
+			background-image: url('out1.jpg');
+			transform: translateZ(0);
+			will-change: transform;
 		}
 	}
 	.out4 {
@@ -115,18 +133,4 @@
 	.out4-form {
 		clip-path: polygon(5% 0, 100% 0, 100% 98%, 96% 100%, 0 100%, 0 2%);
 	}
-	/* Fixed background for tablet and mobile */
-	/* @media all and (max-width: 1024px) {
-		.out1:after {
-			content: '';
-			width: 100vw;
-			height: 100vw;
-			background-position: inherit;
-			background-image: inherit;
-			background-size: inherit;
-			background-attachment: inherit;
-			background-repeat: inherit;
-			position: fixed;
-		}
-	} */
 </style>
