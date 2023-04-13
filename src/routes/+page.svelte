@@ -96,10 +96,10 @@
 </div>
 
 <style>
-	.out1 {
+	/* .out1 {
 		background-image: url('images/out1.jpg');
-	}
-	.out1 {
+	} */
+	.out2 {
 		background-image: url('images/out2.jpg');
 	}
 	@media only screen and (max-width: 600px) {
