@@ -13,10 +13,14 @@
 		</div>
 	</div>
 	<!-- second -->
-	<div
-		class="out2 bg-fixed w-screen h-[102vh] z-10 mix-blend-screen bg-cover bg-top bg-no-repeat -mb-24"
-		style="background-image:url('images/out2.jpg')"
-	/>
+	<div class="out2-with-fixed-bg">
+		<div class="out2-bg-wrap">
+			<div
+				class="out2 bg-fixed w-screen h-[102vh] z-10 mix-blend-screen bg-cover bg-top bg-no-repeat -mb-24"
+				style="background-image:url('images/out2.jpg')"
+			/>
+		</div>
+	</div>
 	<!-- third -->
 	<div
 		class="bg-fixed w-screen h-[120vh] z-10 mix-blend-screen bg-center bg-cover bg-no-repeat"
@@ -122,6 +126,37 @@
 			background-size: cover;
 			background-position: center center;
 			background-image: url('out1.jpg');
+			transform: translateZ(0);
+			will-change: transform;
+			background-blend-mode: screen;
+		}
+		.out2-with-fixed-bg {
+			width: 100%;
+			height: 100vh;
+
+			/* Important */
+			position: relative;
+		}
+		.out2-bg-wrap {
+			clip: rect(0, auto, auto, 0);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.out2 {
+			margin-bottom: -20px;
+			background-blend-mode: screen;
+			position: fixed;
+			display: block;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center center;
+			background-image: url('out2.jpg');
 			transform: translateZ(0);
 			will-change: transform;
 		}
