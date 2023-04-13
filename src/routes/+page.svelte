@@ -90,11 +90,12 @@
 </div>
 
 <style>
-	/* @media only screen and (max-width: 600px) {
-		.desktop {
-			display: none;
+	@media only screen and (max-width: 600px) {
+		.out1 {
+			background-size: auto 100vh;
+			background-position: top center;
 		}
-	} */
+	}
 	.out4 {
 		background-position: 0 10%;
 		background-size: 50vw;
@@ -103,7 +104,7 @@
 		clip-path: polygon(5% 0, 100% 0, 100% 98%, 96% 100%, 0 100%, 0 2%);
 	}
 	/* Fixed background for tablet and mobile */
-	@media all and (max-width: 1024px) {
+	/* @media all and (max-width: 1024px) {
 		.out1:after {
 			content: '';
 			width: 100vw;
@@ -115,5 +116,5 @@
 			background-repeat: inherit;
 			position: fixed;
 		}
-	}
+	} */
 </style>
