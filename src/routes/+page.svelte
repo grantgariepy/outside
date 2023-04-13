@@ -1,20 +1,29 @@
 <div class="desktop">
 	<!-- first -->
-
-	<div
-		class="out1 bg-fixed w-screen h-screen z-10 bg-cover bg-center bg-no-repeat -mb-12"
-		style="background-image:url('images/out1.jpg')"
-	>
-		<h1 class="tracking-widest early-edition text-8xl w-screen text-center antialiased">HALCYON</h1>
+	<div class="out1-with-fixed-bg">
+		<div class="out1-bg-wrap">
+			<div
+				class="out1 bg-fixed w-screen h-screen bg-cover bg-center bg-no-repeat -mb-12"
+				style="background-image:url('images/out1.jpg')"
+			>
+				<h1 class="tracking-widest early-edition text-8xl w-screen text-center antialiased">
+					HALCYON
+				</h1>
+			</div>
+		</div>
 	</div>
 	<!-- second -->
-	<div
-		class="out2 bg-scroll md:bg-fixed w-screen h-[102vh] z-10 mix-blend-screen bg-cover bg-top bg-no-repeat -mb-24"
-		style="background-image:url('images/out2.jpg')"
-	/>
+	<div class="out2-with-fixed-bg">
+		<div class="out2-bg-wrap">
+			<div
+				class="out2 bg-fixed w-screen h-[102vh] mix-blend-screen bg-cover bg-top bg-no-repeat -mb-24"
+				style="background-image:url('images/out2.jpg')"
+			/>
+		</div>
+	</div>
 	<!-- third -->
 	<div
-		class="bg-fixed w-screen h-[120vh] z-10 mix-blend-screen bg-center bg-cover bg-no-repeat"
+		class="bg-fixed w-screen h-[120vh] mix-blend-screen bg-center bg-cover bg-no-repeat"
 		style="background-image:url('images/out3.webp')"
 	>
 		<div class="h-screen flex flex-col justify-center">
@@ -90,6 +99,38 @@
 </div>
 
 <style>
+	@media only screen and (max-width: 600px) {
+		.out1-with-fixed-bg {
+			width: 100%;
+			height: 100vh;
+			position: relative;
+			margin-bottom: -3rem;
+			mix-blend-mode: screen;
+		}
+		.out1-bg-wrap {
+			clip: rect(0, auto, auto, 0);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+		}
+		.out2-with-fixed-bg {
+			width: 100%;
+			height: 102vh;
+			position: relative;
+			margin-bottom: -6rem;
+			mix-blend-mode: screen;
+		}
+		.out2-bg-wrap {
+			clip: rect(0, auto, auto, 0);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 102vh;
+		}
+	}
 	.out4 {
 		background-position: 0 10%;
 		background-size: 50vw;
