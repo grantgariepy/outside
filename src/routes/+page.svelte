@@ -1,24 +1,20 @@
 <div class="desktop">
 	<!-- first -->
-	<div class="out1-with-fixed-bg">
-		<div class="out1-bg-wrap">
-			<div class="out1">
-				<h1 class="tracking-widest early-edition text-8xl w-screen text-center antialiased">
-					HALCYON
-				</h1>
-			</div>
-		</div>
+	<div
+		class="out1 md:bg-fixed w-screen h-screen bg-cover bg-center bg-no-repeat -mb-12"
+		style="background-image:url('images/out1.jpg')"
+	>
+		<h1 class="tracking-widest early-edition text-8xl w-screen text-center antialiased">HALCYON</h1>
 	</div>
 	<!-- second -->
-	<div class="out2-with-fixed-bg">
-		<div class="out2-bg-wrap">
-			<div class="out2" />
-		</div>
-	</div>
+	<div
+		class="out2 md:bg-fixed w-screen h-[102vh] mix-blend-screen bg-cover bg-top bg-no-repeat -mb-24"
+		style="background-image:url('images/out2.jpg')"
+	/>
 	<!-- third -->
 	<div
 		class="bg-fixed w-screen h-[120vh] mix-blend-screen bg-center bg-cover bg-no-repeat"
-		style="background-image:url('images/out3.webp')"
+		style="background-image:url('images/out3.jpg')"
 	>
 		<div class="h-screen flex flex-col justify-center">
 			<div class="flex justify-start">
@@ -42,7 +38,7 @@
 		<div class="flex flex-row justify-start">
 			<div
 				class=" out4 h-[120vh] w-1/2 bg-fixed -mt-24 -mb-24 bg-no-repeat mix-blend-screen"
-				style="background-image:url('images/out4.webp')"
+				style="background-image:url('images/out4.jpg')"
 			/>
 			<div class="out4-form bg-zinc-900 w-1/2 -mb-12 -mt-12">
 				<div>
@@ -88,69 +84,11 @@
 	<div
 		class="bg-fixed w-screen h-[130vh] mix-blend-screen bg-center bg-cover bg-no-repeat"
 		id="third"
-		style="background-image:url('images/out6.webp')"
+		style="background-image:url('images/out6.jpg')"
 	/>
 </div>
 
 <style>
-	/* @media only screen and (max-width: 600px) { */
-	.out1-with-fixed-bg {
-		width: 100%;
-		height: 100vh;
-		position: relative;
-		margin-bottom: -3rem;
-		mix-blend-mode: screen;
-	}
-	.out1-bg-wrap {
-		clip: rect(0, auto, auto, 0);
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-	}
-	.out1 {
-		position: fixed;
-		display: block;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-size: contain;
-		background-position: center center;
-		transform: translateZ(0);
-		will-change: transform;
-		background: url('images/out1.jpg') center no-repeat;
-	}
-	.out2 {
-		position: fixed;
-		display: block;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-size: cover;
-		background-position: center;
-		transform: translateZ(0);
-		will-change: transform;
-		background-image: url('images/out2.jpg');
-	}
-	.out2-with-fixed-bg {
-		width: 100%;
-		height: 102vh;
-		position: relative;
-		margin-bottom: -6rem;
-		mix-blend-mode: screen;
-	}
-	.out2-bg-wrap {
-		clip: rect(0, auto, auto, 0);
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 102vh;
-	}
-	/* } */
 	.out4 {
 		background-position: 0 10%;
 		background-size: 50vw;
