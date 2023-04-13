@@ -2,10 +2,7 @@
 	<!-- first -->
 	<div class="out1-with-fixed-bg">
 		<div class="out1-bg-wrap">
-			<div
-				class="out1 bg-fixed w-screen h-screen bg-cover bg-center bg-no-repeat -mb-12"
-				style="background-image:url('images/out1.jpg')"
-			>
+			<div class="out1" style="background-image:url('images/out1.jpg')">
 				<h1 class="tracking-widest early-edition text-8xl w-screen text-center antialiased">
 					HALCYON
 				</h1>
@@ -15,10 +12,7 @@
 	<!-- second -->
 	<div class="out2-with-fixed-bg">
 		<div class="out2-bg-wrap">
-			<div
-				class="out2 bg-fixed w-screen h-[102vh] mix-blend-screen bg-cover bg-top bg-no-repeat -mb-24"
-				style="background-image:url('images/out2.jpg')"
-			/>
+			<div class="out2" style="background-image:url('images/out2.jpg')" />
 		</div>
 	</div>
 	<!-- third -->
@@ -99,38 +93,62 @@
 </div>
 
 <style>
-	@media only screen and (max-width: 600px) {
-		.out1-with-fixed-bg {
-			width: 100%;
-			height: 100vh;
-			position: relative;
-			margin-bottom: -3rem;
-			mix-blend-mode: screen;
-		}
-		.out1-bg-wrap {
-			clip: rect(0, auto, auto, 0);
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100vw;
-			height: 100vh;
-		}
-		.out2-with-fixed-bg {
-			width: 100%;
-			height: 102vh;
-			position: relative;
-			margin-bottom: -6rem;
-			mix-blend-mode: screen;
-		}
-		.out2-bg-wrap {
-			clip: rect(0, auto, auto, 0);
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100vw;
-			height: 102vh;
-		}
+	/* @media only screen and (max-width: 600px) { */
+	.out1-with-fixed-bg {
+		width: 100%;
+		height: 100vh;
+		position: relative;
+		margin-bottom: -3rem;
+		mix-blend-mode: screen;
 	}
+	.out1-bg-wrap {
+		clip: rect(0, auto, auto, 0);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+	}
+	.out1 {
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center center;
+		transform: translateZ(0);
+		will-change: transform;
+	}
+	.out2 {
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		transform: translateZ(0);
+		will-change: transform;
+	}
+	.out2-with-fixed-bg {
+		width: 100%;
+		height: 102vh;
+		position: relative;
+		margin-bottom: -6rem;
+		mix-blend-mode: screen;
+	}
+	.out2-bg-wrap {
+		clip: rect(0, auto, auto, 0);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 102vh;
+	}
+	/* } */
 	.out4 {
 		background-position: 0 10%;
 		background-size: 50vw;
