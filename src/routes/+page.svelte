@@ -87,9 +87,12 @@
 		style="background-image:url('images/out6.jpg')"
 	/>
 </div>
+
+<!-- mobile -->
+
 <div class="mobile">
 	<!-- section 1 -->
-	<div class="mobile-1 -mb-12">
+	<div class="mobile-1">
 		<img src="images/out1.jpg" alt="" class="object-cover h-screen w-auto" />
 		<h1
 			class="absolute inset-x-0 top-0 tracking-widest early-edition text-8xl w-screen text-center antialiased"
@@ -98,11 +101,11 @@
 		</h1>
 	</div>
 	<!-- SECTION 2 -->
-	<div class="mobile-2 mix-blend-screen -mb-24">
+	<div class="mobile-2">
 		<img src="images/out2.jpg" alt="" class="object-cover h-screen w-auto" />
 	</div>
 	<!-- SECTION 3 -->
-	<div class="mobile-3 mix-blend-screen -mb-24">
+	<div class="mobile-3">
 		<div class="absolute inset-x-0 h-screen flex flex-col justify-center">
 			<div class="flex justify-start">
 				<span
@@ -122,7 +125,7 @@
 		<img src="images/out3.jpg" alt="" class="object-cover h-screen w-auto" />
 	</div>
 	<!-- SECTION 4 -->
-	<div class="mobile-4 mix-blend-screen h-screen -mb-12">
+	<div class="mobile-4 h-screen">
 		<div class="absolute inset-x-0 flex flex-col justify-center">
 			<div class="out4-form bg-zinc-900 w-1/2">
 				<div>
@@ -137,7 +140,7 @@
 		<img src="images/out4.jpg" alt="" class="object-cover h-screen w-auto" />
 	</div>
 	<!-- SECTION 5 -->
-	<div class="mobile-5 mix-blend-screen h-screen">
+	<div class="mobile-5 h-screen">
 		<div class="absolute inset-x-0 flex flex-col justify-center">
 			<div class="flex justify-start pt-96">
 				<span
@@ -167,7 +170,7 @@
 		<img src="images/out5.jpg" alt="" class="object-cover h-screen w-auto" />
 	</div>
 	<!-- SECTION 6 -->
-	<div class="mobile-6 mix-blend-screen">
+	<div class="mobile-6">
 		<img src="images/out6-mobile.jpg" alt="" class=" object-cover object-left h-screen w-auto" />
 	</div>
 </div>
