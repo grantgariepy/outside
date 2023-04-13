@@ -211,12 +211,12 @@
 		background-image: url('images/out6.jpg') !important;
 	}
 	@media only screen and (max-width: 600px) {
-		/* 	.desktop {
+		.desktop {
 			display: none;
 		}
 		.mobile {
 			display: block;
-		}*/
+		}
 		.out4 {
 			background-position: 50% !important;
 			background-size: auto 100vh !important;
@@ -226,12 +226,6 @@
 		}
 	}
 	@media only screen and (max-width: 1700px) {
-		/* 	.desktop {
-			display: none;
-		}
-		.mobile {
-			display: block;
-		}*/
 		.out4 {
 			background-size: auto 100vh !important;
 		}
