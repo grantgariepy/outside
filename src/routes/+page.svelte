@@ -94,6 +94,12 @@
 		.out1 {
 			background: url('out1.jpg') center top no-repeat scroll;
 			background-size: auto 100vh;
+			background-attachment: scroll;
+		}
+		.out2 {
+			background: url('out2.jpg') center top no-repeat scroll;
+			background-size: auto 100vh;
+			background-attachment: scroll;
 		}
 	}
 	@media only screen and (max-width: 600px) {
