@@ -127,7 +127,9 @@
 			height: 100%;
 			background-size: cover;
 			background-position: center center; */
-			background-image: url('images/out1.jpg');
+			background: url('images/out1.jpg') no-repeat center center;
+			min-height: 100%;
+			background-size: cover;
 			/* transform: translateZ(0);
 			will-change: transform;
 			background-blend-mode: screen;
