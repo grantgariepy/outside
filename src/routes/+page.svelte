@@ -8,7 +8,7 @@
 	</div>
 	<!-- second -->
 	<div
-		class="out2 md:bg-fixed w-screen h-[102vh] mix-blend-screen bg-cover bg-top bg-no-repeat -mb-24"
+		class="out2 md:bg-fixed w-screen h-screen mix-blend-screen bg-cover bg-top bg-no-repeat -mb-24"
 		style="background-image:url('images/out2.jpg')"
 	/>
 	<!-- third -->
