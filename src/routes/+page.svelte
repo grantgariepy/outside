@@ -90,6 +90,12 @@
 </div>
 
 <style>
+	@supports (-webkit-touch-callout: none) {
+		.out1 {
+			background: url('out1.jpg') center top no-repeat scroll;
+			background-size: auto 100vh;
+		}
+	}
 	@media only screen and (max-width: 600px) {
 		.out1 {
 			background-size: auto 100vh;
