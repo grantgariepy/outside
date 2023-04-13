@@ -2,7 +2,7 @@
 	<!-- first -->
 	<div class="out1-with-fixed-bg">
 		<div class="out1-bg-wrap">
-			<div class="out1" style="background-image:url('images/out1.jpg')">
+			<div class="out1">
 				<h1 class="tracking-widest early-edition text-8xl w-screen text-center antialiased">
 					HALCYON
 				</h1>
@@ -12,7 +12,7 @@
 	<!-- second -->
 	<div class="out2-with-fixed-bg">
 		<div class="out2-bg-wrap">
-			<div class="out2" style="background-image:url('images/out2.jpg')" />
+			<div class="out2" />
 		</div>
 	</div>
 	<!-- third -->
@@ -120,6 +120,7 @@
 		background-position: center center;
 		transform: translateZ(0);
 		will-change: transform;
+		background-image: url('images/out1.jpg');
 	}
 	.out2 {
 		position: fixed;
@@ -132,6 +133,7 @@
 		background-position: center;
 		transform: translateZ(0);
 		will-change: transform;
+		background-image: url('images/out2.jpg');
 	}
 	.out2-with-fixed-bg {
 		width: 100%;
