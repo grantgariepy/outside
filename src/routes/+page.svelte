@@ -106,16 +106,14 @@
 	@media all and (max-width: 1024px) {
 		.out1:after {
 			content: '';
-			width: 100%;
-			height: 100%;
+			width: 100vw;
+			height: 100vw;
 			background-position: inherit;
 			background-image: inherit;
 			background-size: inherit;
 			background-attachment: inherit;
 			background-repeat: inherit;
 			position: fixed;
-			top: 0;
-			z-index: -1;
 		}
 	}
 </style>
