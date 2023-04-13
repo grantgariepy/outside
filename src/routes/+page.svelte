@@ -103,11 +103,11 @@
 		background-image: url('images/out2.jpg');
 	}
 	@media only screen and (max-width: 600px) {
-		.out1-with-fixed-bg {
+		/* .out1-with-fixed-bg {
 			width: 100%;
 			height: 100vh;
 
-			/* Important */
+			Important
 			position: relative;
 		}
 		.out1-bg-wrap {
@@ -117,21 +117,21 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-		}
+		} */
 		.out1 {
-			position: fixed;
+			/* position: fixed;
 			display: block;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
 			background-size: cover;
-			background-position: center center;
+			background-position: center center; */
 			background-image: url('images/out1.jpg');
-			transform: translateZ(0);
+			/* transform: translateZ(0);
 			will-change: transform;
 			background-blend-mode: screen;
-			z-index: 20;
+			z-index: 20; */
 		}
 		.out2-with-fixed-bg {
 			width: 100%;
