@@ -2,10 +2,7 @@
 	<!-- first -->
 	<div class="out1-with-fixed-bg">
 		<div class="out1-bg-wrap">
-			<div
-				class="out1 bg-fixed w-screen h-screen z-10 bg-cover bg-center bg-no-repeat -mb-12"
-				style="background-image:url('images/out1.jpg')"
-			>
+			<div class="out1 bg-fixed w-screen h-screen z-10 bg-cover bg-center bg-no-repeat -mb-12">
 				<h1 class="tracking-widest early-edition text-8xl w-screen text-center antialiased">
 					HALCYON
 				</h1>
@@ -17,7 +14,6 @@
 		<div class="out2-bg-wrap">
 			<div
 				class="out2 bg-fixed w-screen h-[102vh] z-10 mix-blend-screen bg-cover bg-top bg-no-repeat -mb-24"
-				style="background-image:url('images/out2.jpg')"
 			/>
 		</div>
 	</div>
@@ -100,6 +96,12 @@
 </div>
 
 <style>
+	.out1 {
+		background-image: url('images/out1.jpg');
+	}
+	.out1 {
+		background-image: url('images/out2.jpg');
+	}
 	@media only screen and (max-width: 600px) {
 		.out1-with-fixed-bg {
 			width: 100%;
@@ -125,10 +127,11 @@
 			height: 100%;
 			background-size: cover;
 			background-position: center center;
-			background-image: url('out1.jpg');
+			background-image: url('images/out1.jpg');
 			transform: translateZ(0);
 			will-change: transform;
 			background-blend-mode: screen;
+			z-index: 20;
 		}
 		.out2-with-fixed-bg {
 			width: 100%;
@@ -156,7 +159,7 @@
 			height: 100%;
 			background-size: cover;
 			background-position: center center;
-			background-image: url('out2.jpg');
+			background-image: url('images/out2.jpg');
 			transform: translateZ(0);
 			will-change: transform;
 		}
