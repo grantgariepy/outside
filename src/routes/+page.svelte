@@ -116,11 +116,11 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-size: cover;
+		background-size: contain;
 		background-position: center center;
 		transform: translateZ(0);
 		will-change: transform;
-		background-image: url('images/out1.jpg');
+		background: url('images/out1.jpg') center no-repeat;
 	}
 	.out2 {
 		position: fixed;
