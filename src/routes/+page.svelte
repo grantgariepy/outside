@@ -41,7 +41,7 @@
 		/>
 		<div class="w-2/3 md:w-1/2 h-screen md:flex md:flex-col md:justify-center">
 			<div
-				class="out4-form absolute -mt-28 inset-x-0 md:relative bg-zinc-900 md:w-full md:h-screen md:-mb-12"
+				class="out4-form absolute -mt-28 inset-x-0 md:relative bg-zinc-900 md:w-full md:h-screen"
 			>
 				<div class="h-[90vh] flex flex-col justify-center">
 					<div class="flex justify-start">
@@ -62,22 +62,6 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div>
-		<div class="md:flex md:flex-row md:justify-start">
-			<div
-				class="out4 h-[200vh] md:h-[106vh] bg-cover w-full md:w-1/2 bg-fixed md:-mt-24 md:-mb-24 bg-no-repeat mix-blend-screen"
-				style="background-image:url('images/out4.jpg')"
-			/>
-			<div class="h-1/2 flex flex-col justify-center">
-				<div class="out4-form md:relative bg-zinc-900 md:w-1/2 md:h-screen md:-mb-12 md:-mt-12">
-					<div>
-						<p class="text-white">hi</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-	<!-- fifth -->
 	<div
 		class="bg-fixed w-screen h-[150vh] bg-center bg-cover bg-no-repeat md:-mb-24 -mt-72 -mb-24"
 		id="third"
