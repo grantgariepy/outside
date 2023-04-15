@@ -113,6 +113,7 @@
 	<!-- sixth -->
 	<div
 		class="out6 bg-fixed w-screen h-[130vh] mix-blend-screen bg-center-center bg-cover bg-no-repeat md:-mt-12"
+		style="background-image:url('images/out6-desktop.jpg')"
 	/>
 </div>
 
@@ -215,9 +216,6 @@
 <style>
 	.mobile {
 		display: none;
-	}
-	.out6 {
-		background-image: url('images/out6-desktop.jpg');
 	}
 	@media only screen and (max-width: 600px) {
 		.desktop {
