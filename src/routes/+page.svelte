@@ -217,7 +217,7 @@
 		display: none;
 	}
 	.out6 {
-		background-image: url('images/out6.jpg') !important;
+		background-image: url('images/out6-desktop.jpg');
 	}
 	@media only screen and (max-width: 600px) {
 		.desktop {
